@@ -120,15 +120,38 @@ public class YourService extends KiboRpcService {
     double[] distCoeffsArray = { -0.164787, 0.020375, -0.001572, -0.000369, 0.000000 };
 
 
+//    Point[][][] path = {
+//            {{} , {new Point(10.4f, -10.1f, 4.47f), new Point(11.2746f, -10.04f, 5.41f)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
+//            {{} , {}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
+//            {{} , {new Point(0, 0, 0)}, {}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
+//            {{} , {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
+//            {{} , {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
+//            {{} , {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
+//            {{} , {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {}, {new Point(0, 0, 0)}},
+//            {{} , {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {}}
+//    };
+
     Point[][][] path = {
-            {{} , {new Point(10.4f, -10.1f, 4.47f), new Point(11.2746f, -10.04f, 5.41f)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
-            {{} , {}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
-            {{} , {new Point(0, 0, 0)}, {}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
-            {{} , {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
-            {{} , {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
-            {{} , {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}},
-            {{} , {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {}, {new Point(0, 0, 0)}},
+            {{} , {new Point(10.4f, -10.1f, 4.47f), new Point(11.2746f,-9.92284f,5.2988f)}, {new Point(10.46f,-9.806f,4.48f),new Point(10.612,-9.0709,4.48)}, {new Point(10.46f,-9.806f,4.48f),new Point(10.71f,-7.7f,4.85815f),new Point(10.71f,-7.7f,4.48f)}, {new Point(10.46f,-9.806f,4.48f),new Point(10.51f,-6.7185f,5.1804f)}, {new Point(10.46f,-9.806f,4.48f),new Point(11.114f,-7.9756f,5.3393f)}, {new Point(10.46f,-9.806f,4.48f),new Point(11.355f,-8.9929f,4.7818f)}, {}, {}},
+            {{} , {}, {new Point(10.612f,-9.0709f,4.9065f),new Point(10.612f,-9.0709f,4.48f)}, {new Point(10.71f,-7.7f,4.6778f),new Point(10.71f,-7.7f,4.48f)}, {new Point(10.51f,-6.7185f,5.2988f),new Point(10.51f,-6.7185f,5.1804f)}, {new Point(11.114f,-7.9756f,5.3393f)}, {new Point(11.355f,-8.9929f,4.7818f)}, {new Point(11.369f,-8.5518f,4.48f)}, {new Point(11.143f,-6.7607f,4.68094f),new Point(11.143f,-6.7607f,4.9654f)}},
+            {{} , {new Point(10.612f,-9.0709f,4.9065f),new Point(11.2746f,-9.92284f,5.2988f)}, {}, {new Point(10.71f,-7.7f,5.09302f),new Point(10.71f,-7.7f,4.48f)}, {new Point(10.51f,- 9.0709f,5.1804f),new Point(10.51f,-6.7185f,5.1804f)}, {new Point(10.71f,-7.7f,5.41f),new Point(11.114f,-7.9756f,5.3393f)}, {new Point(10.612f,-9.0709f,5.41f),new Point(11.355f,-8.9929f,4.7818f)},{new Point(10.612f,-8.5845f,4.48f),new Point(11.369f,-8.5518f,4.48f)}, {new Point(10.612f,-8.1178f,4.96604f),new Point(11.143f,-6.7607f,4.9654f)}},
+            {{} , {new Point(10.71f,-7.7f,4.6778f),new Point(11.2746f,-9.92284f,5.2988f)}, {new Point(10.71f,-7.7f,5.09302f),new Point(10.612f,-9.0709f,4.48f)}, {}, {new Point(10.51f,-6.9132f,5.1804f),new Point(10.51f,-6.7185f,5.1804f)}, {new Point(10.71f,-7.7f,5.41f),new Point(11.114f,-7.9756f,5.3393f)}, {new Point(10.8418f,-7.9564f,4.95047f),new Point(11.355f,-8.9929f,4.7818f)}, {new Point(11.369f,-8.5518f,4.99538f),new Point(11.369f,-8.5518f,4.48f)}, {new Point(11.143f,-6.7607f,4.9654f)}},
+            {{} , {new Point(10.51f,-6.7185f,5.28668f),new Point(11.2746f,-9.92284f,5.2988f)}, {new Point(10.612f,-9.0709f,5.1804f),new Point(10.612f,-9.0709f,4.48f)}, {new Point(10.51f,-6.9132f,5.1804f),new Point(10.71f,-7.7f,4.48f)}, {}, {new Point(11.114f,-7.9756f,5.3393f)}, {new Point(10.51f,-8.9929f,5.1804f),new Point(11.355f,-8.9929f,4.7818f)}, {new Point(10.51f,-8.5518f,5.1804f),new Point(11.369f,-8.5518f,4.48f)},{new Point(11.143f,-6.7607f,4.9654f)}},
+            {{} , {new Point(11.114f,-7.9756f,5.3393f)}, {new Point(10.7955f,-8.0635f,5.28879f),new Point(10.612f,-9.0709f,4.48f)}, {new Point(10.69f,-7.7f,5.41f),new Point(10.71f,-7.7f,4.48f)}, {new Point(10.51f,-6.7185f,5.1804f)}, {}, {new Point(11.355f,-8.9929f,4.7818f)}, {new Point(11.369f,-8.5518f,4.83f),new Point(11.369f,-8.5518f,4.48f)}, {new Point(11.143f,-6.7607f,5.12219f),new Point(11.143f,-6.7607f,4.9654f)}},
+            {{} , {new Point(11.2746f,-9.92284f,5.2988f)}, {new Point(10.612f,-9.0709f,5.0818f),new Point(10.612f,-9.0709f,4.48f)}, {new Point(10.8418f,-7.9564f,4.95047f),new Point(10.71f,-7.7f,4.48f)}, {new Point(10.51f,-8.9929f,5.1804f),new Point(10.51f,-6.7185f,5.1804f)}, {new Point(11.114f,-7.9756f,5.3393f)}, {}, {new Point(11.369f,-8.5518f,4.48f)}, {new Point(11.143f,-6.7607f,4.9654f)}},
+            {{} , {new Point(11.2746f,-9.92284f,5.2988f)}, {new Point(10.612f,-8.5845f,4.48f),new Point(10.612f,-9.0709f,4.48f)}, {new Point(11.369f,-8.5518f,5.09538f),new Point(10.71,-7.7,4.48)}, {new Point(10.51f,-8.5518f,5.1804f),new Point(10.51f,-6.7185f,5.1804f)}, {new Point(11.369f,-8.5518f,4.6725f),new Point(11.114f,-7.9756f,5.3393f)}, {new Point(11.355f,-8.9929f,4.7818f)}, {}, {new Point(11.369f, -8.5518f, 4.9654f), new Point(11.143f, -6.7607f, 4.9654f)}},
             {{} , {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {new Point(0, 0, 0)}, {}}
+    };
+
+    Quaternion[] quaternions = {
+            new Quaternion(0f, 0f, -0.707f, 0.707f),
+            new Quaternion(0f, 0f, -0.707f, 0.707f),
+            new Quaternion(0.5f, 0.5f, -0.5f, 0.5f),
+            new Quaternion(0f, 0.707f, 0f, 0.707f),
+            new Quaternion(0f, 0f, -1f, 0f),
+            new Quaternion(-0.5f, -0.5f, -0.5f, 0.5f),
+            new Quaternion(0f, 0f, 0f, 1f),
+            new Quaternion(0f, 0.707f, 0f, 0.707f)
     };
 
     Point[] pathTarget1 = new Point[] {
@@ -143,6 +166,12 @@ public class YourService extends KiboRpcService {
             new Point(10.612f, -9.0709f, 4.48f)
     };
     Quaternion quaternionTarget2 = new Quaternion(0.5f, 0.5f, -0.5f, 0.5f);
+
+    Point[] pathTarget21 = new Point[] {
+            new Point(10.612f, -9.0709f, 5.41f),
+            new Point(11.2746f, -9.92284f, 5.41f),
+            new Point(11.2746f, -10.04f, 5.41f)
+    };
 
     Point[] pathTarget3 = new Point[] {
             new Point(10.612f, -9.0709f, 4.8325f),
@@ -186,144 +215,130 @@ public class YourService extends KiboRpcService {
         // the mission starts
         api.startMission();
         int loop_counter = 0;
+        String mQrContent = "";
         Mat img;
 
         List<Long> timeRemain = api.getTimeRemaining();
         System.out.print("Time Remain ");
         System.out.println(timeRemain);
 
+        //---
+//        moveToPos(pathTarget1, quaternionTarget1);
+//        delay(3);
+//        img = api.getMatNavCam();
+//        api.saveMatImage(img, "Target1.png");
+//        aim(img, pathTarget1[pathTarget1.length - 1], 1);
+//        delay(3);
+//        api.laserControl(true);
+//        img = api.getMatNavCam();
+//        api.saveMatImage(img, "Target1Snap.png");
+//        api.takeTargetSnapshot(1);
+//        api.laserControl(false);
+
+        ////////////////////////
+        double[] upq = pyrToQ(90f,0f,0f);
+        quaternions[2] = new Quaternion((float) upq[0], (float) upq[1], (float) upq[2], (float) upq[3]);
+        quaternions[3] = new Quaternion((float) upq[0], (float) upq[1], (float) upq[2], (float) upq[3]);
+        double[] downq = pyrToQ(-90f,0f,0f);
+        quaternions[5] = new Quaternion((float) downq[0], (float) downq[1], (float) downq[2], (float) downq[3]);
+
+//        moveToPos(pathTarget2, quaternionTarget2);
+//        delay(3);
+//        img = api.getMatNavCam();
+//        api.saveMatImage(img, "Target2.png");
+//        aim(img, pathTarget2[pathTarget2.length - 1], 4);
+//        delay(3);
+//        api.laserControl(true);
+//        img = api.getMatNavCam();
+//        api.saveMatImage(img, "Target2Snap.png");
+//        api.takeTargetSnapshot(2);
+//        api.laserControl(false);
+//
+//        moveToPos(pathTarget21, quaternionTarget1);
+//        delay(5);
+//        img = api.getMatNavCam();
+//        api.saveMatImage(img, "Target3.png");
+//        aim(img, pathTarget3[pathTarget3.length - 1], 4);
+//        delay(5);
+//        api.laserControl(true);
+//        img = api.getMatNavCam();
+//        api.saveMatImage(img, "Target3Snap.png");
+//        api.takeTargetSnapshot(3);
+//        api.laserControl(false);
+        //---
+
         // get the list of active target id
+        int currentPoint = 0;
+        boolean scannedQR = false;
         List<Integer> targetsList = api.getActiveTargets();
         while(targetsList.size() > 0){
+            timeRemain = api.getTimeRemaining();
+            System.out.print("Time Remain ");
+            System.out.println(timeRemain);
+            if(timeRemain.get(1) < 135000 && !scannedQR) break;
+            if(timeRemain.get(1) < 40000) break;
+
             System.out.print("Active Targets");
             System.out.println(targetsList);
             for(int i:targetsList){
-                if(i == 1){
-                    moveToPos(pathTarget1, quaternionTarget1);
-                    delay(5);
+                int direction = 0;
+                if(i == 1) direction = 1;
+                if(i == 2) direction = 4;
+                if(i == 3) direction = 6;//4
+                if(i == 4) direction = 2;
+                if(i == 5) direction = 5;
+                if(i == 6) direction = 0;
+
+                moveToPos(path[currentPoint][i], quaternions[i]);
+                delay(3);
+                img = api.getMatNavCam();
+                api.saveMatImage(img, "Target"+i+".png");
+                aim(img, path[currentPoint][i][path[currentPoint][i].length - 1], direction);
+                delay(3);
+                api.laserControl(true);
+                img = api.getMatNavCam();
+                api.saveMatImage(img, "Target"+i+"Snap.png");
+                api.takeTargetSnapshot(i);
+                api.laserControl(false);
+                currentPoint = i;
+                if((i == 1 || i == 2 || i == 6) && !scannedQR){
+                    moveToPos(path[currentPoint][7], quaternions[7]);
+                    delay(3);
+                    api.flashlightControlFront(0.05f);
                     img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target1.png");
-                    aim(img, pathTarget1[pathTarget1.length - 1], 1);
-                    delay(5);
-                    api.laserControl(true);
-                    img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target1Snap.png");
-                    //api.laserControl(false);
-                    api.takeTargetSnapshot(1);
+                    api.saveMatImage(img, "Target7.png");
+                    mQrContent = scanQR(img);
+                    api.flashlightControlFront(0.00f);
+                    scannedQR = true;
                 }
-                if(i == 2) {
-                    moveToPos(pathTarget2, quaternionTarget2);
-                    delay(5);
-                    img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target2.png");
-                    aim(img, pathTarget2[pathTarget2.length - 1], 4);
-                    delay(5);
-                    api.laserControl(true);
-                    img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target2Snap.png");
-                    //api.laserControl(false);
-                    api.takeTargetSnapshot(2);
-                }
-                if(i == 3) {
-                    moveToPos(pathTarget3, quaternionTarget3);
-                    delay(5);
-                    img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target3.png");
-                    aim(img, pathTarget3[pathTarget3.length - 1], 4);
-                    delay(5);
-                    api.laserControl(true);
-                    img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target3Snap.png");
-                    //api.laserControl(false);
-                    api.takeTargetSnapshot(3);
-                }
-                if(i == 4) {
-                    moveToPos(pathTarget4, quaternionTarget4);
-                    delay(5);
-                    img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target4.png");
-                    aim(img, pathTarget4[pathTarget4.length - 1], 2);
-                    delay(5);
-                    api.laserControl(true);
-                    img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target4Snap.png");
-                    //api.laserControl(false);
-                    api.takeTargetSnapshot(4);
-                }
-                if(i == 5) {moveToPos(pathTarget5, quaternionTarget5);
-                    delay(5);
-                    img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target5.png");
-                    aim(img, pathTarget5[pathTarget5.length - 1], 5);
-                    delay(5);
-                    api.laserControl(true);
-                    img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target5Snap.png");
-                    //api.laserControl(false);
-                    api.takeTargetSnapshot(5);
-                }
-                if(i == 6) {moveToPos(pathTarget6, quaternionTarget6);
-                    delay(5);
-                    img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target6.png");
-                    aim(img, pathTarget6[pathTarget6.length - 1], 0);
-                    delay(5);
-                    api.laserControl(true);
-                    img = api.getMatNavCam();
-                    api.saveMatImage(img, "Target6Snap.png");
-                    //api.laserControl(false);
-                    api.takeTargetSnapshot(6);
-                }
+
+                if(timeRemain.get(1) < 135000 && !scannedQR) break;
+                if(timeRemain.get(1) < 40000) break;
             }
             targetsList = api.getActiveTargets();
         }
 
-        moveToPos(pathTarget7, quaternionTarget7);
-        delay(5);
-        img = api.getMatNavCam();
-        api.saveMatImage(img, "Target7.png");
-
-//            // get a camera image
-//            Mat image = api.getMatNavCam();
-//
-//            // irradiate the laser
-//            api.laserControl(true);
-//
-//            // take active target snapshots
-//            int target_id = 1;
-//            api.takeTargetSnapshot(target_id);
-
-            // get remaining active time and mission time
-//            List<Long> timeRemaining = api.getTimeRemaining();
-
-//            // check the remaining milliseconds of mission time
-//            if (timeRemaining.get(1) < 60000){
-//                break;
-//            }
-
-        // turn on the front flash light
-        api.flashlightControlFront(0.05f);
-        
-        // get QR code content
-        String mQrContent = scanQR(img);
-
-        // turn off the front flash light
-        api.flashlightControlFront(0.00f);
+        if(!scannedQR) {
+            moveToPos(path[currentPoint][7], quaternions[7]);
+            delay(3);
+            api.flashlightControlFront(0.05f);
+            img = api.getMatNavCam();
+            api.saveMatImage(img, "Target7.png");
+            mQrContent = scanQR(img);
+            api.flashlightControlFront(0.00f);
+            currentPoint = 7;
+        }
 
         // notify that astrobee is heading to the goal
         api.notifyGoingToGoal();
-
-        /* ********************************************************** */
-        /* write your own code to move Astrobee to the goal positiion */
-        /* ********************************************************** */
-        moveToPos(pathGoal, quaternionGoal);
+        moveToPos(path[currentPoint][8], quaternionGoal);
         // send mission completion
         api.reportMissionCompletion(mQrContent);
     }
 
     @Override
     protected void runPlan2(){
-       // write your plan 2 here
+        // write your plan 2 here
     }
 
     @Override
@@ -331,7 +346,7 @@ public class YourService extends KiboRpcService {
         // write your plan 3 here
     }
 
-    private void aim(Mat img, Point position, int direction){ // direction 0 = front; 1 = left; 2 = back; 3 = right; 4 = up; 5 = down;
+    private void aim(Mat img, Point position, int direction){ // direction 0 = front; 1 = left; 2 = back; 3 = right; 4 = up; 5 = down; 6 = up(point3);
         System.out.println("Start aim");
         Mat cameraMatrix = new Mat(3, 3, CvType.CV_32FC1);
         Mat distCoeffs = new Mat(1, 5, CvType.CV_32FC1);
@@ -370,8 +385,8 @@ public class YourService extends KiboRpcService {
             if(direction == 1) fr = pyrToQ(0f, 0f, -80f);
             if(direction == 2) fr = pyrToQ(0f, 0f, -170f);
             if(direction == 3) fr = pyrToQ(0f, 0f, -260f);
-            if(direction == 4) fr = pyrToQ(80f, 0f, -90f);
-            if(direction == 5) fr = pyrToQ(-80f, 0f, -90f);
+            if(direction == 4 || direction == 6) fr = pyrToQ(80f, 0f, 0f);
+            if(direction == 5) fr = pyrToQ(-80f, 0f, 0f);
 
             double avgDisCam2TargetArray = 0f;
             for(int i = 2;i < disCam2TargetArray.length; i+=3){
@@ -393,8 +408,8 @@ public class YourService extends KiboRpcService {
             System.out.print(" ");
             System.out.println(cr[3]);
 
-            api.moveTo(position, quaterniontF, true);
-            api.moveTo(position, quaterniontF, true);
+            //api.moveTo(position, quaterniontF, true);
+            //api.moveTo(position, quaterniontF, true);
 
             api.moveTo(position, quaterniontC, true);
             api.moveTo(position, quaterniontC, true);
@@ -473,12 +488,18 @@ public class YourService extends KiboRpcService {
         if(direction == 3) yaw = yaw+90;
         if(direction == 4){
             pitch = pitch+90;
-            yaw = yaw+270;
-            //roll = roll+90;
+            roll = yaw*3.5f;
+            yaw = 0f;
+        }
+        if(direction == 6){
+            pitch = pitch+90;
+            roll = yaw*2f;
+            yaw = 0f;
         }
         if(direction == 5){
-            pitch = pitch+270;
-            yaw = yaw+270;
+            pitch = pitch-90;
+            roll = yaw*3.5f;
+            yaw = 0f;
         }
 
         System.out.print("Yaw ");
